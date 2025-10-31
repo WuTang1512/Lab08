@@ -37,4 +37,9 @@ public class CustomListTest {
         // checks to see if city has been deleted from list
         assertFalse(list.hasCity(edmonton));
     }
+
+    @Test
+    public void testCountCities() {
+        assertEquals(3, list.countCities(list));
+    }
 }
